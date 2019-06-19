@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="/">Home</a>
+        <a href="login">Login</a>
+        <a href="registo">Registo</a>
+        <a href="newpass">Nova Senha</a>
+        <a href="apagar">Apagar Conta</a>
+    </div>
+
+    {% block body %}
+    {% endblock %}
+
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+        <div class="footer-left">
+            <p class="footer-links">
+                <a href="/">Home</a>
+                <a href="login">Login</a>
+                <a href="registo">Registo</a>
+                <a href="newpass">Nova Senha</a>
+                <a href="apagar">Apagar</a>
+            </p>
+            <p>Ricardo Oliveira  &copy; 2019</p>
+        </div>
+
+		</footer>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends 'login.html' %}
+{% block body %}
+
+<h1>ALTERAR SENHA</h1>
+
+<form method="post">
+    <fieldset>
+    <h2>Introduza o nome de Utilizador</h2>
+    <input type="text" name="usr" required>
+        <p><br></p>
+    <h2>Nova Palavra-Passe</h2>
+    <input type="password" name="pwd" required>
+        <p><br></p>
+    <h2>Confirme a sua Palavra-Passe</h2>
+    <input type="password" name="cpwd" required>
+    <p><br></p>
+    <input type="submit" value="Submeter">
+    </fieldset>
+</form>
+
+{% if erro %}<h1>{{ erro }}</h1>{% endif %}
+
+{% endblock %}
